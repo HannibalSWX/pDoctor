@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/baise"
+    android:orientation="vertical" >
+
+    <!-- 头部区域 -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/baise"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 注册界面 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:gravity="center_vertical"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/phone_forgot" />
+
+                <com.owen.pDoctor.util.ClearEditText
+                    android:id="@+id/phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/phone"
+                    android:background="@null"
+                    android:hint="手机号"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint"
+                    android:textSize="15sp" >
+                </com.owen.pDoctor.util.ClearEditText>
+
+                <Button
+                    android:id="@+id/getBtn"
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bt_bg"
+                    android:text="发送验证码"
+                    android:textColor="@color/gray16"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/regist_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/register_code" />
+
+                <com.owen.pDoctor.util.ClearEditText
+                    android:id="@+id/yanzhengma_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint"
+                    android:textSize="15sp" >
+                </com.owen.pDoctor.util.ClearEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_psw" />
+
+                <com.owen.pDoctor.util.ClearEditText
+                    android:id="@+id/enterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="密 码(6-16个字符，区分大小写)"
+                    android:imeOptions="actionDone"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 确定按钮 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/regist_sure"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg"
+                    android:padding="12dp"
+                    android:text="注  册"
+                    android:textColor="@color/baise"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/check_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="注册既表示同意《百信健康协议》" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_register" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/layout/activity_regist.xml -->

@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/btn_homesearch_bg" >
+
+            <AutoCompleteTextView
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:hint="请输入类别或关键字"
+                android:imeOptions="actionSearch"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:textColorHint="#cecece"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/search_im"
+                android:layout_width="@dimen/home_search_icon"
+                android:layout_height="@dimen/home_search_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/close_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/close" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_cancel_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="搜索"
+            android:textColor="@color/baise"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:text="你的搜索历史会保存在这里"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/history_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:padding="5dp"
+        android:text="历史搜索记录"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/diliver_im"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_below="@+id/history_tv"
+        android:background="@color/line_gray" />
+
+    <ImageView
+        android:id="@+id/diliver_im2"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_below="@+id/diliver_im"
+        android:background="@color/line_gray2" />
+
+    <ListView
+        android:id="@+id/search_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/diliver_im2"
+        android:background="@color/baise"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:listSelector="#00000000"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fabu_btn_bg"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_fabu_bg"
+            android:padding="10dp"
+            android:text="清除历史"
+            android:textColor="@color/baise"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

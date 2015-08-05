@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.owen.pDoctor.chat.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/baise" >
+
+        <ImageView
+            android:id="@+id/ivPopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:background="@null"
+            android:minWidth="0.0dip"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:src="@drawable/icon_voice" />
+
+        <RelativeLayout
+            android:id="@+id/btn_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivPopUp" >
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/chat_send_btn"
+                android:text="发送"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/btn_photo"
+                android:background="@null"
+                android:minWidth="0.0dip"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip"
+                android:src="@drawable/icon_emotion" />
+
+            <ImageView
+                android:id="@+id/btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="10.0dip"
+                android:paddingTop="10.0dip"
+                android:src="@drawable/icon_add2" />
+
+            <EditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="82dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_bg_gray2"
+                android:paddingLeft="5dp"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_rcd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/ivPopUp"
+            android:background="@drawable/chat_send_btn"
+            android:gravity="center"
+            android:text="按 住 说 话"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="125dip"
+        android:layout_below="@id/rl_input"
+        android:background="@color/baise"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_picchoose"
+        android:layout_width="fill_parent"
+        android:layout_height="125dip"
+        android:layout_below="@+id/ll_facechoose"
+        android:background="@color/baise"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg_gray2"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="相机图片"
+                    android:textColor="@color/gray15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg_gray2"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_paozhao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="立即拍摄"
+                    android:textColor="@color/gray15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_suifang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg_gray2"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="我的随访"
+                    android:textColor="@color/gray15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_huanjiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg_gray2"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_huanjiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="患教中心"
+                    android:textColor="@color/gray15" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.owen.pDoctor.chat.FaceRelativeLayout><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/layout/face_relativelayout.xml -->

@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="忘记密码"
+            android:textColor="@color/baise"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/icon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/phone_forgot" />
+
+            <com.owen.pDoctor.util.ClearEditText
+                android:id="@+id/input_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/tv_getcode"
+                android:layout_toRightOf="@+id/icon_phone"
+                android:background="@null"
+                android:drawableRight="@drawable/close"
+                android:hint="请输入手机号"
+                android:imeOptions="actionGo"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColorHint="@color/hint"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bt_bg"
+                android:padding="5dp"
+                android:text="发送验证码" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_phone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_line1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/register_code" />
+
+            <com.owen.pDoctor.util.ClearEditText
+                android:id="@+id/input_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:drawableRight="@drawable/close"
+                android:hint="验证码"
+                android:imeOptions="actionGo"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColorHint="@color/hint"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_code"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_line2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_bg"
+            android:padding="12dp"
+            android:text="下一步"
+            android:textColor="@color/baise"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/layout/activity_forgot_psw1.xml -->

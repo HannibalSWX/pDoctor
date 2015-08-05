@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/values-xlarge/dimens.xml -->
+    <eat-comment/>
+    <dimen name="MTextSize">36.0sp</dimen>
+    <dimen name="SSSTextSize">27.0sp</dimen>
+    <dimen name="TITTextSize">30.0sp</dimen>
+    <dimen name="ads_height">180.0dip</dimen>
+    <dimen name="content_height">230.0dip</dimen>
+    <dimen name="feedback_height">320.0dip</dimen>
+    <dimen name="home_button_height">70.0dip</dimen>
+    <dimen name="home_heat_img_hight">85.0dip</dimen>
+    <dimen name="home_heat_img_width">136.0dip</dimen>
+    <dimen name="home_search_icon">30.0dip</dimen>
+    <dimen name="my_info_width">90.0dip</dimen>
+    <dimen name="qr_width">240.0dip</dimen>
+    <dimen name="tittle_height">60.0dip</dimen>
+</resources>

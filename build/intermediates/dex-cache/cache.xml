@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/android-support-v13.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b3db0befb5f9a8c310ca661ea2f67da12871fa2">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/android-support-v13-f63ab5903f9c529dcc39435ecc78ba482ebf5c2c.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/weibosdkcore.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="119e2034c8db764d5742ec1cdbcc4aa6bdf85e7a">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/weibosdkcore-608012b648f9dcc5d03eae292908d22636ddf95b.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/gson-2.3.1-53f15feeda9233030d46de25404f072bf335d686.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/UPPayAssistEx.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="398c7d9fcced3befc2e3279d569fc7c964dcc452">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/UPPayAssistEx-35a5b34dd506122ec2820ad2a4fa241672692907.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/alipaysdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b40481f01537a329936ce54ee2fe15ef2537f010">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/alipaysdk-1ac0a295e9f0b818adb7d92c3697e80884ebda4c.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/alipaysecsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/alipaysecsdk-88994adab1b5144bd85cd54730ff0eb74e17d8a5.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/UPPayPluginEx.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="106882c44925f05bc171cff00f073834ccfa7a97">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/UPPayPluginEx-e7b98c3b079f1f5bc922861e6d4e97a19ea02b26.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/alipayutdid.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/alipayutdid-ea028d09b86a7655efb3c884514430bd983b6e12.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/image-loader.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/image-loader-2d4a0e678ab555a9edcf732b71c0b7dbec2bfa0b.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/base.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="037151e779eb161f664eb419c6e0185c92ad5302">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/base-2bac207604ef9b8e44ad9f5c433f418dd55010ba.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/mta-sdk-1.6.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/mta-sdk-1.6.2-c7b979aa6eb24e6fa9f78dc1297804a1ac5b4bbb.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/open_sdk_r5043.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fbc2fb9bce736c4b6d9146b932c4bf7a473f5786">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/open_sdk_r5043-1c4fe6ceed0960412a2f6ec93fd9f8b972df4d0d.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/libammsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c1f63f70671d69ee38379728e1192db82e289246">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/libammsdk-52950d11eee19a2a35bd878099c287eb6c488988.jar" />
+    </item>
+    <item
+        jar="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/libs/zxing.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="96b67e377ff4637ff1fa3bbe9ad7183773935f39">
+        <dex dex="/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/build/intermediates/pre-dexed/debug/zxing-f10fbd9647716283bac984bf3dd030d7fcc3e247.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索"
+            android:textColor="@color/baise"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_homesearch_bg"
+            android:visibility="gone" >
+
+            <AutoCompleteTextView
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:hint="请输入类别或关键字"
+                android:imeOptions="actionSearch"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:textColorHint="#cecece"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/search_im"
+                android:layout_width="@dimen/home_search_icon"
+                android:layout_height="@dimen/home_search_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/close_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/close" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="5dp"
+        android:background="@color/bg"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:text="共有12条搜索结果"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:text="没有搜索到任何信息"
+        android:textSize="15sp" />
+
+    <com.owen.pDoctor.view.XListView
+        android:id="@+id/search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/hint_total"
+        android:background="@color/baise"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/transparent"
+        android:drawSelectorOnTop="false"
+        android:listSelector="#00000000"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/layout/activity_search_result.xml -->

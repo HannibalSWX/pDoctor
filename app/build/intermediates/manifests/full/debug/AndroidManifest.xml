@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.owen.pDoctor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 下载 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <application
+        android:name="com.owen.pDoctor.APP"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.owen.pDoctor.activity.LoginActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 广告界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.WelcomeActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.AdvertismentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 个人资料界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.PersonalSetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 个人设置界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.PersonalSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 医院科室 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.KeshiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 主页界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.RegistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MyPatientActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者消息界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MessagesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者联系人界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ContactsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者分组界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.GroupManagerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者联系界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MessagePersonalActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者资料界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MyPatientProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 上传患者资料界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.UploadPatientProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的患者服务套餐界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MyPatientServiceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 随访界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.SuifangActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 患教界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.HuanjiaoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 更多界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 搜索界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.SearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 搜索结果界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.SearchResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.PayServiceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费定义价格界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.DefinedPriceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费按次咨询界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.TimePriceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费包月咨询界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MonthPriceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费电话咨询界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.PhonePriceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费免费期限界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.FreeDateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页付费功能介绍界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.PayInstructionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页认证界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.AuthenticationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页高端定制界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.CustomizedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页高端定制界面2 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.Customized2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页高端定制界面3 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.Customized3Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页高端定制核对界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.CustomizedCheckActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页高端定制提交成功界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.CustomizedSubmitActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 首页热门详情界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.HomeHeatDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 首页详情点击图片跳转界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ImageShowerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 推广界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.SpreadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 支付界面 -->
+        <activity
+            android:name="com.owen.pDoctor.alipay.AliPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 个人界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.PersonalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.SettingsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 我的活动界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MyZoneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 帮助界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.HelpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 常见问题界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ProblemsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- 修改密码界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ChangePswActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 忘记密码界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ForgotPswActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 忘记密码界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ForgotPsw2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 忘记密码界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.ForgotPsw3Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 用户反馈界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.FeedBackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 关于界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 二维码扫描界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的二维码生成界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.MyQRImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 手机号添加患者界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.AddpatientActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.owen.pDoctor.chat.TestPicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.owen.pDoctor.chat.ImageGridActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.owen.pDoctor.chat.CameraActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.owen.pDoctor.chat.ScaleImageFromSdcardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.owen.pDoctor.chat.PicturesShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.owen.pDoctor.chat.PhotoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 我的患者聊天界面 -->
+        <activity
+            android:name="com.owen.pDoctor.chat.ChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 升级服务 -->
+        <service
+            android:name="com.owen.pDoctor.service.UploadService"
+            android:permission="com.owen.pDoctor.service.UploadService" >
+            <intent-filter>
+                <action android:name="com.owen.pDoctor.service.UploadService" />
+            </intent-filter>
+        </service>
+
+        <!-- WebView界面 -->
+        <activity
+            android:name="com.owen.pDoctor.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- QQ分享 -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.owen.pDoctor.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.owen.pDoctor.ReturnActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- qq登录认证 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104791414" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- 银联支付 -->
+        <activity android:name="com.unionpay.uppay.PayActivity" >
+        </activity>
+        <!--
+        crash service
+        <service
+            android:name=".util.SaveLog2File"
+            android:permission="com.nari.terminal.utils.SaveLog2File" >
+            <intent-filter>
+                <action android:name="com.nari.terminal.utils.SaveLog2File" />
+            </intent-filter>
+        </service>
+        -->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="801535225" />
+        <meta-data
+            android:name="InstallChannel"
+            android:value="play" />
+
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

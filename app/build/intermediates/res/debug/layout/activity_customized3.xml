@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="高端名片定制"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/TITTextSize" />
+    </RelativeLayout>
+
+    <com.owen.pDoctor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_buttom"
+        android:layout_below="@+id/top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/im_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/customized_bg" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="填写邮递信息"
+                        android:textColor="@color/baise"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/customized_step3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="收件人"
+                    android:textColor="@color/gray8"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:hint="me"
+                    android:textColor="@color/gray8"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="联系方式"
+                    android:textColor="@color/gray8"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:hint="联系方式"
+                    android:textColor="@color/gray8"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="收件地址"
+                    android:textColor="@color/gray8"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:hint="南京市鼓楼区"
+                    android:textColor="@color/gray8"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="邮编"
+                    android:textColor="@color/gray8"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_postcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:hint="210012"
+                    android:textColor="@color/gray8"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.owen.pDoctor.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@color/baise" >
+
+        <TextView
+            android:id="@+id/tv_pre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="上一步"
+            android:textColor="@color/green3"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark3" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="核对信息"
+            android:textColor="@color/green3"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/layout/activity_customized3.xml -->

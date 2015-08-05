@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <com.owen.pDoctor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_buttom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="就诊时间:"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2015年1月1号"
+                    android:textColor="@color/green3"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="患者疾病:"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_jibing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="皮肤病"
+                    android:textColor="@color/green3"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="病情阶段:"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="早期"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="常见症状:"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="皮肤痛痒，不适"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="病情概述："
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="病情概述病情概述病情概述病情概述"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/dark3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/baise"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="@dimen/my_info_width"
+                    android:layout_height="wrap_content"
+                    android:text="患者病历："
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_bingli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="患者病历"
+                    android:textColor="@color/gray6"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.owen.pDoctor.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_add_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/green3"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="添加患者诊断资料"
+            android:textColor="@color/baise"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/layout/activity_patient_profile.xml -->

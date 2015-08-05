@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:padding="10dp" >
+
+    <FrameLayout
+        android:id="@+id/fl_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/items_im"
+            android:layout_width="@dimen/tittle_height"
+            android:layout_height="@dimen/tittle_height"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/items_num"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_bg_red2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="5"
+            android:textColor="@color/baise"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/fl_im"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/items_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="周总"
+            android:textColor="@color/heise"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/items_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="那我什么时候来"
+            android:textColor="@color/gray14"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/items_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="12:12"
+        android:textColor="@color/gray14"
+        android:textSize="15sp" />
+
+</RelativeLayout>

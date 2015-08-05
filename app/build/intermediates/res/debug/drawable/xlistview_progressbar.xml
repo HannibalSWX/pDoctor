@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    设置背景色资源 
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/xlistview_progress1"/>
+    设置进度条颜色图像资源
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/xlistview_progress"/>-->
+    <item>    <rotate
+        android:drawable="@drawable/update_btn"
+        android:fromDegrees="0.0"
+        android:pivotX="50.0%"
+        android:pivotY="50.0%"
+        android:toDegrees="360.0" />
+    </item>
+
+</layer-list><!-- From: file:/Users/shengweixing/AndroidStudioProjects/pDoctor1/app/src/main/res/drawable/xlistview_progressbar.xml -->

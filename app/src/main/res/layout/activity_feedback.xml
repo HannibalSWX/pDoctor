@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="问题反馈"
+            android:textColor="@color/baise"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.owen.pDoctor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="您反馈的问题对我们至关重要，我们会仔细聆听您的每一次反馈，不断进步！"
+                    android:textColor="@color/gray6"
+                    android:textSize="15.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/feedback_height"
+                    android:background="@drawable/btn_bg_green2" >
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="请输入您遇到的问题"
+                        android:imeOptions="actionNext"
+                        android:padding="10dp"
+                        android:textColor="@color/gray2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/word_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_diliver"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dip"
+                        android:text="500"
+                        android:textColor="@color/green2"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_diliver"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_above="@+id/ll_addpic"
+                        android:background="@color/green2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_addpic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true" >
+
+                        <TextView
+                            android:id="@+id/tv_addpic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="15dip"
+                            android:text="图片"
+                            android:textColor="@color/gray2"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/green2" />
+
+                        <TextView
+                            android:id="@+id/tv_paizhao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="15dip"
+                            android:text="拍照"
+                            android:textColor="@color/gray2"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:text="提交"
+                android:textColor="@color/baise"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </com.owen.pDoctor.view.MyScrollView>
+
+</RelativeLayout>

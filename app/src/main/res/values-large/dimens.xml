@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="TITTextSize">25.0sp</dimen>
+    <dimen name="MTextSize">20.0sp</dimen>
+    <dimen name="SSSTextSize">18.0sp</dimen>
+    <dimen name="tittle_height">55.0dip</dimen>
+    <dimen name="ads_height">150.0dip</dimen>
+    <dimen name="home_search_icon">25.0dip</dimen>
+    <dimen name="home_heat_img_width">128.0dip</dimen>
+    <dimen name="home_heat_img_hight">80.0dip</dimen>
+    <dimen name="feedback_height">300.0dip</dimen>
+    <dimen name="content_height">220.0dip</dimen>
+    <dimen name="my_info_width">85.0dip</dimen>
+    <dimen name="home_button_height">65.0dip</dimen>
+    <dimen name="qr_width">220.0dip</dimen>
+
+</resources>

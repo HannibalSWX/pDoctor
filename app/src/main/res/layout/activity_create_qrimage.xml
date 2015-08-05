@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tittle_height"
+        android:background="@color/light_blue"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="我的二维码"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/TITTextSize" />
+
+        <ImageView
+            android:id="@+id/im_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/my_more"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.owen.pDoctor.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baise"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="客户用微信扫一扫加您"
+                    android:textColor="@color/gray13"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_addpatient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="手机号添加患者"
+                    android:textColor="@color/light_blue2"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="您的全新联系方式"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="不会泄露您的手机号和微信号"
+                android:textColor="@color/gray13"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/im_myqr"
+                android:layout_width="@dimen/qr_width"
+                android:layout_height="@dimen/qr_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周杰伦"
+                    android:textColor="@color/gray13"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_zhicheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="执业药师"
+                    android:textColor="@color/gray13"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="老客号："
+                    android:textColor="@color/gray13"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_kehao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12358"
+                    android:textColor="@color/gray13"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.owen.pDoctor.view.MyScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_share"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="分享到"
+        android:textColor="@color/heise"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_share_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/home_button_height"
+                android:layout_height="@dimen/home_button_height"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/icon_weixin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="微信好友"
+                android:textColor="@color/heise"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/home_button_height"
+                android:layout_height="@dimen/home_button_height"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/icon_friends" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="微信朋友圈"
+                android:textColor="@color/heise"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/home_button_height"
+                android:layout_height="@dimen/home_button_height"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/icon_qq" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="QQ好友"
+                android:textColor="@color/heise"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share_qzone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/home_button_height"
+                android:layout_height="@dimen/home_button_height"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/icon_qzone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="QQ空间"
+                android:textColor="@color/heise"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* _pDoctor_info.txt
+* ic_launcher-web.png
+* pDoctor.keystore
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/UPPayAssistEx.jar => app/libs/UPPayAssistEx.jar
+* libs/UPPayPluginEx.jar => app/libs/UPPayPluginEx.jar
+* libs/alipaysdk.jar => app/libs/alipaysdk.jar
+* libs/alipaysecsdk.jar => app/libs/alipaysecsdk.jar
+* libs/alipayutdid.jar => app/libs/alipayutdid.jar
+* libs/android-support-v13.jar => app/libs/android-support-v13.jar
+* libs/armeabi-v7a/libentryex.so => app/src/main/jniLibs/armeabi-v7a/libentryex.so
+* libs/armeabi/libentryex.so => app/src/main/jniLibs/armeabi/libentryex.so
+* libs/armeabi/libweibosdkcore.so => app/src/main/jniLibs/armeabi/libweibosdkcore.so
+* libs/base.jar => app/libs/base.jar
+* libs/image-loader.jar => app/libs/image-loader.jar
+* libs/libammsdk.jar => app/libs/libammsdk.jar
+* libs/mips/libentryex.so => app/src/main/jniLibs/mips/libentryex.so
+* libs/mips/libweibosdkcore.so => app/src/main/jniLibs/mips/libweibosdkcore.so
+* libs/mta-sdk-1.6.2.jar => app/libs/mta-sdk-1.6.2.jar
+* libs/open_sdk_r5043.jar => app/libs/open_sdk_r5043.jar
+* libs/weibosdkcore.jar => app/libs/weibosdkcore.jar
+* libs/x86/libentryex.so => app/src/main/jniLibs/x86/libentryex.so
+* libs/x86/libweibosdkcore.so => app/src/main/jniLibs/x86/libweibosdkcore.so
+* libs/zxing.jar => app/libs/zxing.jar
+* lint.xml => app/lint.xml
+* proguard.cfg => app/proguard.cfg
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* goback_left.PNG => goback_left.png
+* ib_face.PNG => ib_face.png
+* picture_select.PNG => picture_select.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
